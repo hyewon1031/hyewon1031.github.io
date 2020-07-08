@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="./img/cdc_icon.ico">
+	<title>질병관리본부(이고싶다)</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.clear{
+			clear: both;
+		}
+		li{
+			list-style-type: none;
+		}
+
+		header{
+			width: 1900px;
+			height: 100px;
+			border: 0px solid #bbbbbb;
+			background-color: white;
+		}
+		#page{
+			text-align: center;
+			width: 1300px;
+			border: 0px solid #bbbbbb;
+			background-color: #f5f6fa;
+			/*letter-spacing: -1px;
+			word-spacing: -2px;*/
+		}
+		#logo{
+			float: left;
+			padding-left: 362px;
+			margin-top: 28px;
+		}
+		#top1{
+			float: left;
+			padding-left: 92px;
+			margin: 29px 20px 0 0;
+		}
+		#top2{
+			float: right;
+			padding-right: 337px;
+			margin: 34px 20px 0 0;
+		}
+
+		nav{
+			width: 1900px;
+			height: 58px;
+			border: 0px solid #bbbbbb;
+			background-color: white;
+		}
+		nav li{
+			font-family: Noto Sans Mono CJK KR Regular;
+			color: #343639;
+			font-size: 19px;
+			display: inline-block;
+			margin: 13px 22px;
+		}
+
+		section{
+			margin-left: 361px;
+			width: 1180px;
+			border: 0px solid #bbbbbb;
+			padding-bottom: 40px;
+		}
+
+/**********************온열질환 건강수칙 ......******************/
+
+		#sec1{
+			display: inline-flex;
+			height: 200px;
+			border: 0px solid pink;
+		}
+		#sub1 #imgbox_1, #sub1 #imgbox_2, #sub1 #imgbox_3, #sub1 #imgbox_4{
+			display: inline-block;
+			font-family: Noto Sans Mono CJK KR Regular;
+			float: left;
+			margin-right: 16px;
+			border: 0px solid navy;
+			overflow: hidden;
+		}
+
+		#sub1 img{
+			width: 283px;
+			display: block;
+			position: relative;
+			z-index: 1;
+		}
+		#sub1 img:hover{
+			transform: scale(1.1);
+			transition-duration: 0.3s;
+			transition-timing-function: ease;
+		}
+
+
+		.textbox_1, .textbox_2, .textbox_3, .textbox_4{
+			border: 0px solid pink;
+			position: absolute;
+			background-color: white;
+			width: 283px;
+			height: 52px;
+			padding-top: 14px;
+		}
+		.textbox_1:hover, .textbox_2:hover, .textbox_3:hover, .textbox_4:hover{
+			/*텍스트를 눌러도 이미지 hover가 적용되도록 하기*/
+		}
+		.ttbox{
+			font-family: Noto Sans CJK KR Medium;
+			font-size: 16px;
+			color: #343639;
+			margin-top: 8px;
+		}
+		.textbox_1 hr, .textbox_2 hr, .textbox_3 hr, .textbox_4 hr{
+			margin-top: 18px;
+		}
+
+		#sub1 #imgbox_4{
+			margin-right: -16px;
+		}
+
+/*********************자주찾는 서비스********************/
+
+		#sec2{
+			height: 170px;
+			background-color: white;
+		}
+		#sub2{}
+		#sub2 img{
+		}
+		#sub2 li{
+			display: inline-block;
+			font-family: Noto Sans CJK KR Regular;
+			font-size: 15px;
+			color: #555555;
+			line-height: 28px;
+			margin: 50px 30px 0 30px;
+			text-align: center;
+		}
+
+		#change1:hover{ /*텍스트에 커서를 갖다대도 이미지가 바뀌도록 해야함*/
+			color: #043763;
+		}
+		#change2:hover{
+			color: #043763;
+		}
+		#change3:hover{
+			color: #043763;
+		}
+		#change4:hover{
+			color: #043763;
+		}
+		#change5:hover{
+			color: #043763;
+		}
+		#change6:hover{
+			color: #043763;
+		}
+
+/*********보도자료, 공지사항, 채용공고, 주간건강과질병***********/
+
+		#sub3{
+			width: 742px;
+			height: 260px;
+			border: 1px solid #e1e6eb;
+			background-color: white;
+			padding-left: 35px;
+		}
+		#sub3 li{
+			font-family: Noto Sans CJK KR Medium;
+			color: #343639;
+			font-size: 16px;
+			float: left;
+			display: inline-block;
+			margin: 18px 32px 16px 0;
+		}
+		#bodo span{
+			color: #21a089;
+		}
+		#sub3>#plus{
+			padding-left: 252px;
+			font-size: 14px;
+			color: #aaaaaa;
+		}
+
+		#sub3-2{
+			float: left;
+			width: 355px;
+			height: 198px;
+			border: 0px solid #e1e6eb;
+		}
+		#sub3-2 li{
+			font-family: Noto Sans CJK KR Regular;
+			color: #343639;
+			font-size: 14px;
+			text-align: justify;
+			float: left;
+			display: inline-block;
+			margin: 5px 0;
+		}
+
+		#sub3-3{
+			padding-top: 30px;
+			float: right;
+			width: 363px;
+			height: 167px;
+			border: 0px solid #e1e6eb;
+		}
+		#sub3-3 li{
+			font-family: Noto Sans Mono CJK KR Regular;
+			color: #343639;
+			font-size: 15px;
+			letter-spacing: -0.5px;
+			word-spacing: -2px;
+			text-align: justify;
+			float: left;
+			display: inline-block;
+			margin: 5px 0;
+		}
+		#sub1 #marnone1{
+			margin-right: -20px;
+		}
+		#corona{
+			padding-top: 30px;
+		}
+		#corona span{
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+/****************오른쪽박스 감염병정보, 건강정보, 손상정보***************/
+
+		#sub3_2{
+			width: 382px;
+			height: 260px;
+			border: 1px solid #e1e6eb;
+			background-color: white;
+		}
+		#sub3_2 li{
+			font-family: Noto Sans CJK KR Medium;
+			color: #343639;
+			font-size: 16px;
+			float: left;
+			display: inline-block;
+			margin: 8px 36px 16px 27px;
+		}
+
+
+		#whynot{
+			display: inline-block;
+			margin-bottom: -44px;
+		}
+		#why{
+			float: left;
+			margin: 0 17px 0 0;
+		}
+		#why2{
+			float: right;
+		}
+		#minidiv{
+			margin-top: 70px;
+		}
+		#minibox{
+			margin-left: 30px;
+		}
+		#minibox li{
+			width: 40px;
+			height: 27px;
+			margin: 0 4px 4px 0;
+			padding-top: 3px;
+			border: 1px solid #e1e6eb;
+			background-color: #f5f6fa;
+			color: #6a6a6a;
+		}
+		#date span{
+			font-family: Noto Sans CJK KR Medium;
+			font-size: 13px;
+			color: #81868e;
+		}
+
+/**************감염병정보 박스 디테일 수정 필요***********/
+
+		#minibox2{
+			margin-left: 30px;
+		}
+		#minibox2 li{
+			height: 24px;
+			margin: 25px 4px -21px 0px;
+			padding: 4px 12px 0 12px;
+			border: 1px solid #e1e6eb;
+			border-radius: 15px;
+			background-color: white;
+			font-size: 13px;
+			color: #6a6a6a;
+		}
+		#minibox2 #plus2{
+			background-color: #f5f6fa;
+		}
+
+
+/*배너존배너존배너존배너존배너존배너존배너존배너존배너존배너존배너존배너존*/
+/*배너존배너존배너존배너존배너존배너존배너존배너존배너존배너존배너존배너존*/
+/*배너존배너존배너존배너존배너존배너존배너존배너존배너존배너존배너존배너존*/
+/*배너존배너존배너존배너존배너존배너존배너존배너존배너존배너존배너존배너존*/
+/*배너존배너존배너존배너존배너존배너존배너존배너존배너존배너존배너존배너존*/
+
+
+		.banner{position: relative; width: 383px; height: 260px; margin:auto; padding:0; overflow: hidden;}
+		.banner ul{position: absolute; margin: 0px; padding:0; list-style: none; }
+		.banner ul li{float: left; width: 383px; height: 260px; margin:0; padding:0;}
+
+		#banner{
+			display: inline-flex;
+			height: 260px;
+			padding-top: 25px;
+			border: 0px solid blue;
+		}
+		#banner div{
+			float: left;
+			width: 383px;
+			height: 260px;
+			margin: 0 15px -48px 0;
+			border: 0px solid red;
+		}
+		#banner .marnone2{
+			margin-right: -0.1px;
+		}
+
+		#banbox1{
+			position:relative;
+			color: white;
+		}
+		#banbox1 #bantb{
+			position: absolute;
+			top:0%;
+			left:0%;
+			width: 383px;
+			height: 34px;
+			background-color: rgba(0, 0, 0, 0.4); 
+			display: inline-block;
+		}
+		#bantb li{
+			display: inline-block;
+			font-size: 14px;
+			font-family: Noto Sans CJK KR Medium;
+		}
+		#bantb .bantext1{
+			margin-top: 7px;
+			margin-right: 180px;
+		}
+		ul button{
+			margin: -1.5px;
+			width: 20px;
+			height: 20px;
+			border: 1px solid #a7b1c1;
+			color: #64676c;
+		}
+		.bantext2{
+			margin-right: 7px;
+		}
+		.pp{
+			margin-left: 2px;
+			font-size: 16px;
+		}
+
+/***************************sns소식****************************/
+
+		#sec5{
+			height: 232px;
+			background-color: white;
+		}
+		section #snsbox{
+			display: flex;
+		}
+		#sns{
+			width: 520px; 
+			text-align: left;
+			margin: 20px 10px  0 20px;
+		}
+		#snstext{
+			margin-top: 20px;
+		}
+		#tt1{
+			font-size: 24px;
+			color: #333333;
+			font-family: Noto Sans CJK KR Medium;
+		}
+		#tt1 p{
+			width: 168px;
+			box-shadow: inset 0 -14px 0 #ffd02b;
+
+		}
+		#tt2{
+			font-size: 15px;
+			font-family: Noto Sans CJK KR Regular;
+			color: #999999;
+		}
+		
+		#snslink #snsimg{
+			display: flex;
+		}
+		#snsimg li{
+			margin: 100px 43px 0 16px;
+		}
+
+
+/***********************아이언맨 손씻기 어쩌구**********************/
+
+		#sec6{
+			display: inline-block;
+			height: 315px;
+		}
+		#sub4 #imgbox1, #sub4 #imgbox2, #sub4 #imgbox3, #sub4 #imgbox4{
+			display: inline-block;
+			font-family: Noto Sans Mono CJK KR Regular;
+			float: left;
+			margin-right: 16px;
+			margin-top: 50px;
+			border: 0px solid navy;
+			overflow: hidden;
+		}
+
+		#sub4 img{
+			width: 283px;
+			display: block;
+			position: relative;
+			z-index: 1;
+		}
+		#sub4 img:hover{
+			transform: scale(1.1);
+			transition-duration: 0.3s;
+			transition-timing-function: ease;
+		}
+
+
+		.textbox1, .textbox2, .textbox3, .textbox4{
+			border: 0px solid pink;
+			position: absolute;
+			background-color: white;
+			width: 283px;
+			height: 59px;
+			padding-top: 14px;
+		}
+		.textbox1:hover, .textbox2:hover, .textbox3:hover, .textbox4:hover{
+			/*텍스트를 눌러도 이미지 hover가 적용되도록 하기*/
+		}
+		.first{
+			font-family: Noto Sans CJK KR Medium;
+			font-size: 16.5px;
+			color: #343639;
+		}
+		.second{
+			font-family: Noto Sans CJK KR Regular;
+			font-size: 14.5px;
+			color: #777777;
+		}
+		.textbox1 hr, .textbox2 hr, .textbox3 hr, .textbox4 hr{
+			margin-top: 12px;
+		}
+
+		#sub4 #imgbox4{
+			margin-right: -16px;
+		}
+
+
+
+		footer{
+			width: 1900px
+		}
+		#underlink1{
+			width: 1900px;
+			height: 58px;
+			background-color: white;
+			border: 0px solid red;
+			margin-top: -4px;
+		}
+		#underlink1 li{
+			font-family: Noto Sans CJK KR Medium;
+			color: #343639;
+			display: inline-block;
+			margin-right: 10px;
+			margin-top: 16px;
+		}
+		#udtext1 .udtt1{
+			font-size: 17px;
+		}
+		.udtt1 button{
+			background-color: white;
+			border: 0px solid red;
+			font-size: 8px;
+			color: #7c7c7d;
+		}
+		#udtext1 li{
+			font-size: 15px;
+		}
+
+
+
+		#underlink2{
+			width: 1900px;
+			height: 83px;
+			border: 0px solid red;
+		}
+		#underlink2 li{
+			font-family: Noto Sans CJK KR Medium;
+			color: #343639;
+			display: inline-block;
+			margin-right: 1px;
+			margin-top: 26px;
+		}
+		#udtext2 .udtt2{
+			font-weight: bold;
+			color: #64676c;
+		}
+		#udtext2{
+			display: inline-flex;
+		}
+		#udtext2 li{
+			font-size: 14px;
+		}
+
+		.udtt2 span{
+			color: #21a089;
+		}
+		#leftpart{
+			margin-right: 19px;
+		}
+		#rightpart{
+			margin-top: -6px;
+		}
+
+		#udtext2 .udtt3{
+			font-size: 15px;
+			color: #64676c;
+			border: 1px solid #d3d8dd;
+			margin-right: -2px;
+		}
+		li.udtt3{
+			width: 190px;
+			height: 28px;
+			text-align: left;
+			padding: 9px 0 0 11px;
+		}
+		.udtt3 button{
+			background-color: #f5f6fa;
+			border: 0px solid red;
+			color: #7c7c7d;
+			float: right;
+			margin-right: 11px;
+		}
+
+
+		#underlink3{
+			width: 1900px;
+			height: 81px;
+			border: 0px solid red;
+		}
+		#underlink3 li{
+			font-family: Noto Sans CJK KR Regular;
+			color: #64676c;
+			display: inline-block;
+			margin-right: 1px;
+		}
+		#udtext3{
+			display: inline-flex;
+		}
+		#udtext3 li{
+			font-size: 14px;
+		}
+		#leftpart2{
+			margin-right: 30px;
+		}
+		#leftpart2 li{
+			float: left;
+		}
+		#rightpart2{
+			margin-top: -6px;
+		}
+		#rightpart2 li{
+			margin-right: 7px;
+		}
+
+		input{
+			font-size: 16px;
+			font-family: Noto Sans CJK KR Medium;
+			width: 441px;
+			height: 40px;
+			padding-left: 10px;
+			border: 2px solid #21a089;
+			outline: none;
+			float: left;
+		}
+		input:-ms-input-placeholder{color: #757575;}
+		input:-webkit-input-placeholder{color: #757575;}
+		input:-moz-placeholder{color: #757575;}
+
+		#top1 button{
+			width: 42px;
+			height: 44px;
+			border: 0px;
+			outline: none;
+			padding: 3px 2px 0 0;
+			background-color: #21a089;
+			cursor: pointer;
+		}
+
+		#sec0{
+			border: 0px solid red;
+			width: 100px;
+			position: fixed;
+			margin-left: 1775px;
+			margin-top: -355px;
+		}
+		#sub0 li{
+			font-family: Noto Sans CJK KR Medium;
+			font-size: 16px;
+			color: #5f6978;
+			margin-top: 10px;
+		}
+		#sub0 .ttst{
+			padding-bottom: 5px;
+		}
+		#sub0 img{
+			cursor: pointer;
+		}
+
+		#topbutton{
+			border: 0px solid blue;
+			width: 100px;
+			position: fixed;
+			margin-left: 1775px;
+			margin-top: 225px;
+			cursor: pointer;
+		}
+		#topfix{
+			position: fixed;
+			z-index: 100;
+		}
+		#sec00{
+			padding-top: 159px;
+		}
+		img:hover, li:hover{
+			cursor: pointer;
+		}
+
+/*//////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////*/
+
+		.dropbtn {
+		  background-color: white;
+		  color: #343639;
+		  padding: 16px;
+		  font-size: 16px;
+		  border: none;
+		  display: inline-block;
+		}
+
+		.dropdown {
+			margin-top: -15px;
+		  position: relative;
+		  display: inline-block;
+		}
+
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: white;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+
+		.dropdown-content a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+
+		.dropdown-content a:hover {background-color: #ddd;}
+
+		.dropdown:hover .dropdown-content {display: block;}
+
+		.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+	</style>
+</head>
+
+<body id="page">
+
+<div id="topfix">
+	<header>
+		<div id="logo">
+			<a href="./index.html"><img src="./img/logo.png"></a>
+		</div>
+		<div id="top1">
+			<input type="text" placeholder="검색어를 입력해주세요." name="click">
+			<button><img src="./img/search_icon.png"></button>
+		</div>
+		<div id="top2">
+			<img src="./img/search_1.png">
+		</div>
+	</header>
+
+
+	<div class="clear"></div>
+
+
+	<hr width="1900px" color ="#eaeef3" size="0.5px">
+
+	<nav>
+		<ul>
+		<li class="dropdown">
+			<button class="dropbtn">감염병</button>
+			<div class="dropdown-content">
+				<a href="#">감염병정보</a>
+			</div>
+		</li>
+		<li>건강정보</li>
+		<li>정책정보</li>
+		<li>연구개발</li>
+		<li>알림‧자료</li>
+		<li>간행물‧통계</li>
+		<li>민원‧정보공개</li>
+		<li>기관소개</li>
+		<li>사업별홈페이지</li>
+		</ul>
+	</nav>
+</div>
+
+	<div class="clear"></div>
+
+	<section id="sec00">
+		<div id="main">
+			<img src="./img/main01.jpg">
+		</div>
+	</section>
+
+	<div class="clear"></div>
+
+	<section id="sec0">
+		<div>
+			<ul id="sub0">
+				<li class="ttst">사용자별<p>맞춤메뉴</li>
+				<li><img src="./img/right_icon1.png" onmouseover="this.src='./img/right_icon1_back.png'" onmouseout="this.src='./img/right_icon1.png'"></li>
+				<li><img src="./img/right_icon2.png" onmouseover="this.src='./img/right_icon2_back.png'" onmouseout="this.src='./img/right_icon2.png'"></li>
+				<li><img src="./img/right_icon3.png" onmouseover="this.src='./img/right_icon3_back.png'" onmouseout="this.src='./img/right_icon3.png'"></li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="topbutton"><a href="#"><img src="./img/right_top.png"></a></section>
+
+	<div class="clear"></div>
+
+
+	<section id="sec1">
+		<ul id="sub1">
+			<div id="imgbox_1">
+					<img src="./img/image01.png">
+					<ul class="textbox_1">
+						<li class="ttbox">온열질환 건강수칙</li>
+						<hr color ="#21a089" size="2px">
+					</ul>
+				</div>
+
+				<div id="imgbox_2">
+					<img src="./img/image02.png">
+					<ul class="textbox_2">
+						<li class="ttbox">비브리오패혈증 예방수칙</li>
+						<hr color ="#4a75b9" size="2px">
+					</ul>
+				</div>
+
+				<div id="imgbox_3">
+					<img src="./img/image03.jpg">
+					<ul class="textbox_3">
+						<li class="ttbox">진드기 매개 감염병</li>
+						<hr color ="#c24ea8" size="2px">
+					</ul>
+				</div>
+
+				<div id="imgbox_4">
+					<img src="./img/image04.jpg">
+					<ul class="textbox_4">
+						<li class="ttbox">코로나19 영상자료</li>
+						<hr color ="#21a089" size="2px">
+					</ul>
+				</div>
+
+			<!-- <li><img src="./img/image01.png"> <br>온열질환 건강수칙<br><br>
+			<hr color ="#21a089" size="2px"></li>
+			<li><img src="./img/image02.png"> <br>비브리오패혈증 예방수칙<br><br>
+			<hr color ="#4a75b9" size="2px"></li>
+			<li><img src="./img/image03.jpg"> <br>진드기 매개 감염병<br><br>
+			<hr color ="#c24ea8" size="2px"></li>
+			<li id="marnone1"><img src="./img/image04.jpg"> <br>코로나19 영상자료<br><br>
+			<hr color ="#21a089" size="2px"></li> -->
+		</ul>
+	</section>
+
+<div class="clear"></div>
+
+	<section id="sec2">
+		<ul id="sub2">
+			<li><img src="./img/jazu_service.png"></li>
+
+			<li id="change1"><img src="./img/image09.png" onmouseover="this.src='./img/image09_back.png'" onmouseout="this.src='./img/image09.png'"> <br>국가별질병정보</li>
+
+			<a href="./promotional_material.html"><li id="change2"><img src="./img/image10.png" onmouseover="this.src='./img/image10_back.png'" onmouseout="this.src='./img/image10.png'"> <br>홍보자료</li></a>
+
+			<li id="change3"><img src="./img/image11.png" onmouseover="this.src='./img/image11_back.png'" onmouseout="this.src='./img/image11.png'"> <br>간행물‧통계</li>
+
+			<li id="change4"><img src="./img/image12.png" onmouseover="this.src='./img/image12_back.png'" onmouseout="this.src='./img/image12.png'"> <br>조직도‧직원찾기</li>
+
+			<li id="change5"><img src="./img/image13.png" onmouseover="this.src='./img/image13_back.png'" onmouseout="this.src='./img/image13.png'"> <br>법령.지침.서식</li>
+
+			<li id="change6"><img src="./img/image14.png" onmouseover="this.src='./img/image14_back.png'" onmouseout="this.src='./img/image14.png'"> <br>공고/공시</li>
+		</ul>
+	</section>
+
+<div class="clear"></div>
+
+	<section id="sec3">
+		<div id="whynot">
+			<div id="why">
+				<ul id="sub3">
+					<li id="bodo"><span>보도자료</span></li>
+					<li>공지사항</li>
+					<li>채용공고</li>
+					<li>주간건강과질병</li>
+					<li id="plus">더보기+</li>
+
+					<hr width="710px" color ="#e1e6eb" size="1px">
+					<hr width="58px" color ="#21a089" size="2px"> <!-- 색깔 선이 위쪽으로 겹쳐지게 만들어야 함 -->
+
+					<div>
+						<div>
+							<ul id="sub3-2">
+							<li id="corona"><span>코로나바이러스감염증-19 국내 발생…</span>&nbsp;&nbsp;&nbsp;&nbsp;<img src="./img/new.png"></li>
+							<li>코로나바이러스감염증-19 국내 발생 현황(7월 5일) □ 질병관리본부 중앙방역대책본부(본부장 정은경)는 7월 5일 0시 현재, 지역사회에서 43명, 해외유입으로 18명의 신규.....</li>
+							<li id="date"><span>2020-07-05</span></li>
+							</ul>
+						</div>
+
+						<div>
+							<ul id="sub3-3">
+							<li>• 코로나바이러스감염증-19 국내 발생 현황(7월…&nbsp;&nbsp;<img src="./img/new.png"></li>
+							<li>• 코로나바이러스감염증-19 국내 발생 현황(7월…&nbsp;&nbsp;<img src="./img/new.png"></li>
+							<li>• 코로나바이러스감염증-19 국내 발생 현황(7월…&nbsp;&nbsp;<img src="./img/new.png"></li>
+							<li>• 코로나바이러스감염증-19 국내 발생 현황(7월…&nbsp;&nbsp;<img src="./img/new.png"></li>
+							</ul>
+						</div>
+					</div>
+				</ul>
+			</div>
+
+			<div id="why2">
+				<ul id="sub3_2">
+					<li id="jbbox1">감염병정보</li>
+					<li id="jbbox2">건강정보</li>
+					<li id="jbbox3">손상정보</li>
+
+					<div id="minidiv">
+						<ul id="minibox">
+							<li>ㄱ</li>
+							<li>ㄴ</li>
+							<li>ㄷ</li>
+							<li>ㄹ</li>
+							<li>ㅁ</li>
+							<li>ㅂ</li>
+							<li>ㅅ</li>
+							<li>ㅇ</li>
+							<li>ㅈ</li>
+							<li>ㅊ</li>
+							<li>ㅋ</li>
+							<li>ㅌ</li>
+							<li>ㅍ</li>
+							<li>ㅎ</li>
+						</ul>
+					</div>
+
+					<div id="minidiv2">
+						<ul id="minibox2">
+							<li>메르스</li>
+							<li>인플루엔자</li>
+							<li>지카바이러스</li>
+							<li>결핵</li>
+							<li>노로바이러스</li>
+							<li>A형감염</li>
+							<li id="plus2">더보기+</li>
+						</ul>
+					</div>
+				</ul>
+			</div>
+
+		</div>
+	</section>
+
+<div class="clear"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script language="JavaScript">
+<!--
+	$(document).ready(function() {
+		//사용할 배너
+		var $banner = $(".banner").find("ul");
+
+		var $bannerWidth = $banner.children().outerWidth();//배너 이미지의 폭
+		var $bannerHeight = $banner.children().outerHeight(); // 높이
+		var $bannerLength = $banner.children().length;//배너 이미지의 갯수
+		var rollingId;
+
+		//정해진 초마다 함수 실행
+		rollingId = setInterval(function() { rollingStart(); }, 5000);//다음 이미지로 롤링 애니메이션 할 시간차
+
+		//마우스 오버시 롤링을 멈춘다.
+		banner.mouseover(function(){
+			//중지
+			clearInterval(rollingId);
+			$(this).css("cursor", "pointer");
+		});
+		//마우스 아웃되면 다시 시작
+		banner.mouseout(function(){
+			rollingId = setInterval(function() { rollingStart(); }, 3000);
+			$(this).css("cursor", "default");
+		});
+		
+		function rollingStart() {
+			$banner.css("width", $bannerWidth * $bannerLength + "px");
+			$banner.css("height", $bannerHeight + "px");
+			//alert(bannerHeight);
+			//배너의 좌측 위치를 옮겨 준다.
+			$banner.animate({left: - $bannerWidth + "px"}, 1500, function() { //숫자는 롤링 진행되는 시간이다.
+				//첫번째 이미지를 마지막 끝에 복사(이동이 아니라 복사)해서 추가한다.
+				$(this).append("<li>" + $(this).find("li:first").html() + "</li>");
+				//뒤로 복사된 첫번재 이미지는 필요 없으니 삭제한다.
+				$(this).find("li:first").remove();
+				//다음 움직임을 위해서 배너 좌측의 위치값을 초기화 한다.
+				$(this).css("left", 0);
+				//이 과정을 반복하면서 계속 롤링하는 배너를 만들 수 있다.
+			});
+		}
+	}); 
+//-->  
+</script>
+
+
+	<section id="sec4">
+		<div id="banner">
+			<div id="banbox1">
+				<div class="banner">
+					<ul>
+					<li><img src="./img/benerJone2.jpg"></li>
+					<li><img src="./img/benerJone1.jpg"></li>
+					<li><img src="./img/benerJone3.jpg"></li>
+					<li><img src="./img/benerJone4.jpg"></li>
+					<li><img src="./img/benerJone5.jpg"></li>
+					<li><img src="./img/benerJone6.jpg"></li>
+					<li><img src="./img/benerJone7.jpg"></li>
+					<li><img src="./img/benerJone8.jpg"></li>
+					<li><img src="./img/benerJone9.jpg"></li>
+					<li><img src="./img/benerJone10.jpg"></li>
+					<li><img src="./img/benerJone11.jpg"></li>
+					</ul>
+				</div>
+
+				<ul id="bantb">
+					<li class="bantext1">배너존</li>
+					<li class="bantext2">1 / 11</li>
+					<li class="bantext3">
+						<button> ❮ </button>
+						<button>&#10074;&#10074;</button>
+						<button> ❯ </button>
+						<button class="pp"> + </button>
+					</li>
+				</ul>
+			</div>
+
+			<div id="banbox1">
+				<img src="./img/alarmJone1.jpg">
+
+				<ul id="bantb">
+					<li class="bantext1">알림존</li>
+					<li class="bantext2">1 / 1</li>
+					<li class="bantext3">
+						<button> ❮ </button>
+						<button>▶</button>
+						<button> ❯ </button>
+						<button class="pp"> + </button>
+					</li>
+				</ul>
+			</div>
+
+			<div id="banbox1" class="marnone2">
+				<div class="banner">
+					<ul>
+					<li><img src="./img/cardnews1.jpg" width="383px" height="260px"></li>
+					<li><img src="./img/cardnews2.jpg"></li>
+					<li><img src="./img/image15.jpg"></li>
+					<li><img src="./img/image16.jpg"></li>
+					<li><img src="./img/image17.jpg"></li>
+					</ul>
+				</div>
+
+				<ul id="bantb">
+					<li class="bantext1">카드뉴스</li>
+					<li class="bantext2">1 / 5</li>
+					<li class="bantext3">
+						<button> ❮ </button>
+						<button>&#10074;&#10074;</button>
+						<button> ❯ </button>
+						<button class="pp"> + </button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+<div class="clear"></div>
+
+	<section id="sec5">
+		<div id="snsbox">
+			<div id="sns">
+				<img src="./img/sns_sosik.png">
+					<ul id="snstext">
+						<li id="tt1"><p>질병 관련 정보를</p>국민여러분께 신속히 제공하겠습니다</li>
+						<br>
+						<li id="tt2">국가공중보건관리 중추기관으로서 국민 건강을 증진하고, 전문성·혁신·소통·신뢰를<p>기반으로 24시간 365일 최선을 다하겠습니다.</li>
+					</ul>
+			</div>
+
+			<div id="snslink">
+				<ul id="snsimg">
+					<li id="img1"><img src="./img/facebook.png" onmouseover="this.src='./img/facebook_back.png'" onmouseout="this.src='./img/facebook.png'"> </li>
+					<li id="img2"><img src="./img/tweeter.png" onmouseover="this.src='./img/tweeter_back.png'" onmouseout="this.src='./img/tweeter.png'"> </li>
+					<li id="img3"><img src="./img/naver.png" onmouseover="this.src='./img/naver_back.png'" onmouseout="this.src='./img/naver.png'"> </li>
+					<li id="img4"><img src="./img/youtube.png" onmouseover="this.src='./img/youtube_back.png'" onmouseout="this.src='./img/youtube.png'"> </li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+<div class="clear"></div>
+
+	<section id="sec6">
+		<div id="sub4">
+				<div id="imgbox1">
+					<img src="./img/image05.png">
+					<ul class="textbox1">
+						<li class="first">진짜 힘은 손 씻을 때 생긴다!</li><p>
+						<li class="second">마블 콜라보 질병예방 캠페인</li>
+						<hr color ="#d3d8dd" size="2px">
+					</ul>
+				</div>
+
+				<div id="imgbox2">
+					<img src="./img/image06.png">
+					<ul class="textbox2">
+						<li class="first">중동지역을 방문하셨나요?</li><p>
+						<li class="second">메르스 의심증상 발생 시 1339</li>
+						<hr color ="#d3d8dd" size="2px">
+					</ul>
+				</div>
+
+				<div id="imgbox3">
+					<img src="./img/image07.png">
+					<ul class="textbox3">
+						<li class="first">기침예절 지켜요!</li><p>
+						<li class="second">기침예절은 감염병 예방의 기본수칙</li>
+						<hr color ="#d3d8dd" size="2px">
+					</ul>
+				</div>
+
+				<div id="imgbox4">
+					<img src="./img/image08.png">
+					<ul class="textbox4">
+						<li class="first">1339 질병관리본부 콜센터</li><p>
+						<li class="second">질병정보 궁금할 때 감염병이 의심될 때</li>
+						<hr color ="#d3d8dd" size="2px">
+					</ul>
+				</div>
+		</div>
+	</section>
+
+<div class="clear"></div>
+
+	<footer>
+		<div id="underlink1">
+			<ul id="udtext1">
+			<li class="udtt1">관련링크
+				<button>❮</button>&nbsp;<button>❯</button></li>
+			<li>임상진료지침 디지털 가이드라인</li>
+			<li>KoGES</li>
+			<li>질병관리본부국제학술지(Osong PHRP)</li>
+			<li>만성신장병코호트연구</li>
+			<li>국민건강영양조사</li>
+			<li>민원‧정보공개</li>
+			<li>국립의과학지식센터</li>
+			<li>보건복지통계</li>
+			</ul>
+		</div>
+
+<hr width="1900px" color ="#f0f1f3" size="1px">
+
+		<div id="underlink2">
+			<ul id="udtext2">
+				<div id="leftpart">
+					<li class="udtt2">이용안내</li>
+					<li class="udtt2"><span>개인정보처리방침</span></li>
+					<li class="udtt2">웹접근성품질인증</li>
+					<li class="udtt2">저작권정책</li>
+				</div>
+				<div id="rightpart">
+					<li class="udtt3">질병관리본부 관련기관<button>︿</button></li>
+					<li class="udtt3">보건환경연구원<button>︿</button></li>
+					<li class="udtt3">보건복지부 및 소속기관<button>︿</button></li>
+					<li class="udtt3">보건복지부 산하기관<button>︿</button></li>
+				</div>
+			</ul>
+		</div>
+
+		<div id="underlink3">
+			<ul id="udtext3">
+				<div id="leftpart2">
+					<li>
+						(28159) 충북 청주시 흥덕구 오송읍 오송생명2로 187 오송보건의료행정타운내 질병관리본부 ☎전화번호1339
+					</li><p>
+					<li>
+						COPYRIGHT © 2019 질병관리본부 ALL RIGHTS RESERVED.
+					</li>
+				</div>
+
+				<div id="rightpart2">
+					<li><img src="./img/footer_bener1.png"></li>
+					<li><img src="./img/footer_bener2.png"></li>
+					<li><img src="./img/footer_bener3.png"></li>
+					<li><img src="./img/footer_bener4.png"></li>
+					<li><img src="./img/footer_bener5.png"></li>
+					<li><img src="./img/footer_bener6.png"></li>
+				</div>
+			</ul>
+		</div>
+	</footer>
+
+
+
+</body>
+</html>
